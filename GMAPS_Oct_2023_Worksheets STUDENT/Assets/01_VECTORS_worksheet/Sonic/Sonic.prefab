@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3800616816674248108}
   - component: {fileID: 3800616816674248111}
   - component: {fileID: 3800616816674248110}
-  - component: {fileID: 8715930021806595718}
-  - component: {fileID: 6850685531332730053}
+  - component: {fileID: 3800616816674248105}
+  - component: {fileID: 3800616816674248098}
   m_Layer: 0
   m_Name: Sonic
   m_TagString: Untagged
@@ -100,7 +100,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &8715930021806595718
+--- !u!114 &3800616816674248105
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,20 +109,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 3800616816674248104}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e873b6d6d1e03146a570ffe36e5d291, type: 3}
+  m_Script: {fileID: 11500000, guid: c21c2071ec552684583fa46615560dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   originalMesh: {fileID: 0}
   clonedMesh: {fileID: 0}
---- !u!114 &6850685531332730053
+--- !u!114 &3800616816674248098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3800616816674248104}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09f021f8d4cfca24c9e64457ffd0f012, type: 3}
+  m_Script: {fileID: 11500000, guid: e90329dd62668f248bd2278e34eca238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
