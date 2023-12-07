@@ -19,8 +19,11 @@ public class JumpToHeight : MonoBehaviour
         // u = sqrt(v*v - 2as)
         // v = 0, u = ?, a = Physics.gravity, s = Height
 
-        float u = Mathf.Sqrt(2f * Physics.gravity.magnitude * Height);
-        rb.velocity = new Vector3(0f, u, 0f);
+        float u = Mathf.Sqrt(2f * Physics.gravity.magnitude * Height); 
+        // Since I am using physics.gravity.magnitude, it cancels out the negative value from the gravity.
+        // Hence, why we should cancel out the negative value from -2f in the equation.
+        rb.velocity = new Vector3(0f, u, 0f); 
+        // Sets velocity for jump
 
         //float jumpForce = Mathf.Sqrt(-2 * Physics2D.gravity.y * Height);
         //rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
@@ -30,7 +33,7 @@ public class JumpToHeight : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Jump();
+            Jump(); // Plays Jump() function when space is pressed down
         }
     }
 }
