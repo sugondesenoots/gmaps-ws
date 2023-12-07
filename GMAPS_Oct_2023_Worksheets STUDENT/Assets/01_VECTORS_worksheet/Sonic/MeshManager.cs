@@ -1,4 +1,16 @@
-﻿using UnityEngine;
+﻿/* Note that Mesh.vertices returns a copy of the vertices array for a mesh.
+ * 
+ * From the Unity documentation: Returns a copy of the vertex positions or assigns a 
+ * new vertex positions array.
+ * 
+ * Mesh.vertices is actually a C# property, that doesn't just return a value. See the 
+ * source code here, if you're interested:
+ * 
+ * https://github.com/Unity-Technologies/UnityCsReference/blob/master/Runtime/Export/Graphics/Mesh.cs
+ * (line 143)
+ */
+
+using UnityEngine;
 
 public class MeshManager : MonoBehaviour
 {
@@ -26,3 +38,4 @@ public class MeshManager : MonoBehaviour
         triangles = clonedMesh.triangles;
     }
 }
+
